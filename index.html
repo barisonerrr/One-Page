@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Gourmet</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="reservation">
+                <a href="#reservation" class="reservation-btn">Make Reservation</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Fine Dining</h1>
+            <p>Discover the art of culinary excellence</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="menu-btn">View Menu</a>
+                <a href="#reservation" class="reserve-btn">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="mains">Main Courses</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
+            <button class="category-btn" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-items">
+            <!-- Menu items will be dynamically added by JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, Gourmet Restaurant has been serving exceptional cuisine in a sophisticated atmosphere. Our chefs combine traditional techniques with modern innovation to create unforgettable dining experiences.</p>
+                <div class="chef-info">
+                    <img src="images/chef.jpg" alt="Head Chef">
+                    <div class="chef-details">
+                        <h3>Chef Michael Johnson</h3>
+                        <p>Executive Chef</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/restaurant.jpg" alt="Restaurant Interior">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/gallery1.jpg" alt="Dish 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery2.jpg" alt="Dish 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery3.jpg" alt="Dish 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery4.jpg" alt="Dish 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <h2>Make a Reservation</h2>
+        <div class="reservation-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" required>
+                    <input type="time" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" placeholder="Number of Guests" min="1" max="10" required>
+                    <select required>
+                        <option value="">Select Occasion</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="business">Business Dinner</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <textarea placeholder="Special Requests"></textarea>
+                <button type="submit">Book Table</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Gourmet Street, Food District</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 234 567 890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@gourmet.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="map">
+            <!-- Google Maps iframe will be added here -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gourmet Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
